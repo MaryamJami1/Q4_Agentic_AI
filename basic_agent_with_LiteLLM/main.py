@@ -13,7 +13,7 @@ key = os.environ["LITELLM_API_KEY"] = os.getenv("OPENROUTER_API_KEY")
 # step 2: user input
 query = input("You: ")
 
-# step 3: send to Gemini via OpenRouter
+# step 3: send to mistralai via OpenRouter
 try:
     print("\n🤖 AI is replying...")
     response = completion(
@@ -22,7 +22,7 @@ try:
     )
     print("Mistral:", response['choices'][0]['message']['content'])
 
-# step 4: fallback to GPT-3.5 via OpenRouter
+# step 4: fallback
 except exceptions.BadRequestError as e:
     print("\n❌ Mistral failed, switching to Meta.")
     response = completion(

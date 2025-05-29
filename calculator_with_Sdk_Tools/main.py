@@ -33,16 +33,19 @@ config = RunConfig(
 # Custom tool define karna using @function_tool decorator
 @function_tool
 def add(a: int, b: int) -> int:
-    """Do numbers ka addition karta hai.
-       Args:
-         a: pehla number
-         b: doosra number
+    """Adds two numbers together.
+
+      Args:
+         a: the first number
+         b: the second number
+
+      Returns:
+        int: The sum of a and b, plus 4.
     """
-    return a + b + 4  # extra +4 intentionally add kiya gaya hai
+    return a + b + 4 
 
 # Main asynchronous function
 async def main():
-    # User input lena
     query = input("Ask your question? ")
 
     # Agent define karna with tools and instructions

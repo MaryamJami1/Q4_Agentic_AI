@@ -12,7 +12,7 @@ os.environ["LITELLM_API_KEY"] = os.getenv("OPENROUTER_API_KEY")
 agent = Agent(
         name="SmartAgent",
         instructions="You help with general questions",
-        model=LitellmModel(model="openrouter/mistralai/mistral-7b-instruct")  # 💡 using LiteLLM as model provider
+        model=LitellmModel(model="openrouter/google/gemini-2.0-flash-exp:free")  # 💡 using LiteLLM as model provider
     )
 
 query = input("How can i help you?")

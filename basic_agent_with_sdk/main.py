@@ -18,5 +18,5 @@ agent = Agent(
 )
 query = input("How is assist you today? ")
 
-result = Runner.run_sync(agent, query)
+result = Runner.run_sync(agent, query)      
 print(result.final_output)

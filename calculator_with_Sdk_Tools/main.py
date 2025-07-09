@@ -8,7 +8,7 @@ from agents.run import RunConfig  # Run-level configuration ke liye
 # Load environment variables from .env file
 load_dotenv()
 
-# GEMINI API key ko environment variable se lena
+# GEMINI API key ko environment variable
 gemini_key = os.getenv("GEMINI_API_KEY")
 
 # Gemini ke liye OpenAI-style async client initialize karna

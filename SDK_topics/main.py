@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 import asyncio
 from agents.run import RunConfig 
 
-# Load environment variables from .env file
+# Load environment variable
 load_dotenv()
 gemini_key = os.getenv("GEMINI_API_KEY")
 
